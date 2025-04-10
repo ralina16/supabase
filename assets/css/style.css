@@ -232,35 +232,35 @@ body {
 /* banner end */
 
 /* advantages start */
-.advantages {
-    margin-top: 100px;
+.adventages {
+    margin-top: 86px;
 }
 
-.advantages-cards {
+.advantages_cards {
     display: flex;
     justify-content: space-between;
     align-items: start;
 }
 
-.advantages-card {
+.advantages_card {
     max-width: 280px;
 }
 
-.h4-card {
+.name {
+    color: white;
     font-size: 18px;
     padding-top: 16px;
-    font-weight: 400;
 }
 
-.p-card {
+.adventages .info {
     font-size: 18px;
     padding-top: 21px;
-    line-height: 1.4;
+    line-height: 28px;
     color: #E0E0E0;
 }
 
-.adv-card .p-card {
-    font-size: 13px;
+.info2 {
+    font-size: 13px !important;
 }
 /* advantages end */
 
