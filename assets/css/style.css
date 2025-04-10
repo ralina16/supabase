@@ -174,18 +174,18 @@ body {
     gap: 12px;
     align-items: center;
     font-size: 18px;
-    font-family: "Roboto-R";
+   font-weight: 400;
 }
 
 .name_banner {
     margin: 28px 0 52px;
-    font-family: "Roboto-B";
+    font-weight: 600;
     font-size: 48px;
 }
 
 .banner .info,
 .banner .about {
-    font-family: "Roboto-R";
+    font-weight: 400;
     font-size: 14px;
     line-height: 28px;
 }
