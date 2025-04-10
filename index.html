@@ -55,7 +55,7 @@
     <div class="banner container">
         <div class="banner_left">
             <div class="banner_storage">
-                <img src="assets/image/banner/storage.png" alt="">
+                <img src="assets/image/banner/storage.svg" alt="">
                 Storage
             </div>
 
@@ -76,23 +76,6 @@
                 <img src="assets/image/banner/image-3.jpg" alt="" class="slide">
             </div>
         </div>
-
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                const slides = document.querySelectorAll(".slide");
-                let currentSlide = 0;
-
-                function showNextSlide() {
-                    slides[currentSlide].classList.remove("active");
-
-                    currentSlide = (currentSlide + 1) % slides.length;
-
-                    slides[currentSlide].classList.add("active");
-                }
-
-                setInterval(showNextSlide, 3000);
-            });
-        </script>
     </div>
     <!-- banner end -->
 
