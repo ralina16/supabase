@@ -50,30 +50,49 @@
     <div class="header-line"></div>
     <!-- header end -->
 
+   
     <!-- banner start  -->
     <div class="banner container">
-        <div class="banner-left">
-            <div class="banner-logo-storage">
+        <div class="banner_left">
+            <div class="banner_storage">
                 <img src="assets/image/banner/storage.svg" alt="">
                 Storage
             </div>
 
-            <p class="name-banner">Store and serve <br>any type of digital content</p>
+            <p class="name_banner">Store and serve <br>any type of digital content</p>
 
-            <div class="banner-info">
-                <p class="info">An open source Object store service with unlimited scalability, for <br>any file type.
-                </p>
-                <p class="info">With custom policies and permissions that are familiar and easy to <br> implement.</p>
-            </div>
+            <p class="info">An open source Object store service with unlimited scalability, for <br>any file type.</p>
+            <p class="about">With custom policies and permissions that are familiar and easy to <br> implement.</p>
 
-            <div class="banner-btn">
-                <a href="#" class="btn-green">Start a project</a>
+            <div class="banner_btn">
+                <a href="#" class="btn_green">Start a project</a>
             </div>
         </div>
 
-        <div class="banner-right">
-            <img src="assets/image/banner/image-banner.svg" alt="">
+        <div class="banner_right">
+            <div class="slider">
+                <img src="assets/image/banner/image-banner.svg" alt="" class="slide active">
+                <img src="assets/image/banner/image-2.jpg" alt="" class="slide">
+                <img src="assets/image/banner/image-3.jpg" alt="" class="slide">
+            </div>
         </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const slides = document.querySelectorAll(".slide");
+                let currentSlide = 0;
+
+                function showNextSlide() {
+                    slides[currentSlide].classList.remove("active");
+
+                    currentSlide = (currentSlide + 1) % slides.length;
+
+                    slides[currentSlide].classList.add("active");
+                }
+
+                setInterval(showNextSlide, 3000);
+            });
+        </script>
     </div>
     <!-- banner end -->
 
@@ -96,12 +115,12 @@
                 <p class="p-card">Thin API server layer that leverages Postgres' permissions and performance.</p>
             </div>
 
-            <div class="advantages-card">
+            <div class="advantages-card adv-card">
                 <div class="card-images">
                     <img src="assets/image/advantages/images-3.svg" alt="">
                 </div>
                 <h4 class="h4-card">Dependable</h4>
-                <p class="p-card adv-p">Enterprise-level scalability and durability.</p>
+                <p class="p-card">Enterprise-level scalability and durability.</p>
             </div>
         </div>
     </div>
